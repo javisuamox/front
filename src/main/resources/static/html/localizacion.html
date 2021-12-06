@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/img/Bike Shere Co.jpg">
+    <title>Bike Share Co</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"/>
+    <link rel="stylesheet" href="/css/styleIndex.css" />
+</head>
+<body>
+    <!--Inicio-->
+    <div class="page-wrapper">
+        <input type="checkbox" name="" id="menu-toggle">
+
+        <div class="sidebar"><!--barra lateral-->
+            <!--marca-->
+            <div class="brand">
+                <h3><span class="las la-biking"></span>Bike Share</h3>
+            </div>
+
+            <STYLE>a {text-decoration: none;} </STYLE>
+            <!--perfil-->
+            <div class="profile-card">
+                <img src="/img/Bike Shere Co.jpg" alt="" class="profile-img">
+                <div class="profile-info">
+                    <h2>Servicio</h2>
+                    <small>préstamo de bicicletas</small>
+                </div>
+                <div class="profile-action">
+                    <a href="/html/localizacion.html" class="btn btn-white" id="active"><span class="las la-map-marker"></span>Localización</a>
+                </div>
+                <div class="profile-icons">
+                    <span class="las la-street-view"></span>
+                    <span class="las la-bicycle"></span>
+                    <span class="las la-male"></span>
+                </div>
+            </div>
+
+            <!--Menu barra lateral-->
+            <div class="sidebar-menu">
+                <div class="menu-item">
+                    <a href="/index.html">
+                        <span class="las la-home"></span>
+                        <span>Inicio</span>
+                    </a>
+                </div>
+
+                <div class="menu-item">
+                    <a href="/html/cliente.html">
+                        <span class="las la-user"></span>
+                        <span>Usuario</span>
+                    </a>
+                </div>
+
+                <div class="menu-item">
+                    <a href="/html/bicicletas.html">
+                        <span class="las la-bicycle"></span>
+                        <span>Bicicleta</span>
+                    </a>
+                </div>
+
+                <div class="menu-item">
+                    <a href="/html/solicitud.html">
+                        <span class="las la-user-check"></span>
+                        <span>Solicitud</span>
+                    </a>
+                </div>
+
+                <div class="menu-item">
+                    <a href="/html/comentarios.html">
+                        <span class="las la-comment-dots"></span>
+                        <span>Comentarios</span>
+                    </a>
+                </div>
+
+                <div class="menu-item">
+                    <a href="/html/informes.html">
+                        <span class="las la-file-alt"></span>
+                        <span>Informes</span>
+                    </a>
+                </div>
+            </div>
+
+            <!--Comentario barra lateral-->
+            <div class="sidebar-card">
+                <h3>Lo que debes conocer</h3>
+                <p>En el 2018, la Asamblea General de las Naciones Unidas declaró el 3 de junio como el Día Mundial de la Bicicleta. En su sitio web, el organismo explica que “las necesidades de movilidad de las personas que se desplazan caminando o en bicicleta, a menudo la mayoría de los habitantes en una ciudad, siguen sin tomarse en cuenta”. <br> Si deseas leer el artéculo completo, puedes hacer Click en el boton de abajo...</p>
+                <a href="https://www.elcomercio.com/afull/datos-curiosos-bicicleta-dia-mundial.html" class="btn btn-block btn-white">Click Aqui..</a>
+            </div>
+        </div>
+
+        <!--contenido principal-->
+        <div class="main-content">
+            <header>
+                <label for="menu-toggle">
+                    <span class="las la-bars"></span>
+                </label>
+                <div class="head-icons">
+                    <a href="/html/politicas.html"><span class="las la-shield-alt"> Politicas</span></a>
+                    <a href="/html/acercade.html"><span class="las la-info-circle"> Acerca de</span></a>
+                    <div class="head-avatar">
+                        <img src="/img/Bike Shere Co.jpg" alt="" class="avatar">
+                        <div class="avatar"></div>
+                        <span>Préstamo de Bicicletas</span>
+                    </div>
+                </div>
+            </header>
+
+            <main>
+                <!--cuerpo de la pagina-->
+                <div class="page-header">
+                    <h1>Localización</h1>
+                    <small>Aquí podras conocer algunas bicicletas que se tienen a tu disposición.(y tu recorrido)</small>
+                </div>
+
+                <!--menu-cards-->
+                <!--card primera folumna -->
+                <div class="analytics">
+                    <!--card primera fila-->
+                    <div class="card engage-card">
+                        <div class="card-head">
+                            <h3>Tu estas aquí</h3>
+                        </div>
+                        <div class="card-body">
+                            <div id="map"></div>
+                            <script src="/js/localizacion.js"></script>
+                            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCptn-29GUuv-SSDzASn4azic457A0CT6M&callback=iniciarMap"></script>        
+                        </div>
+                    </div>
+                </div>
+            </main>
+            
+            <footer class="footer section">
+                <p class="footer__copy">Copyright 2021 © Bike Share | Todos los derechos reservados - Diseño de Angie Moreno & Javier Murcia</p>
+            </footer>
+        </div>
+    </div>
+    <!--<div id="map"></div>
+    <script src="/js/localizacion.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCptn-29GUuv-SSDzASn4azic457A0CT6M&callback=iniciarMap"></script>-->
+</body>
+</html>
